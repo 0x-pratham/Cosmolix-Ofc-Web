@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import ScrollProgress from "@/components/layout/ScrollProgress";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import SiteShell from "@/components/layout/SiteShell";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
@@ -18,11 +16,19 @@ export const metadata: Metadata = {
     default: "Cosmolix | Beyond Limits",
     template: "%s | Cosmolix",
   },
-  description: "Custom Software Development, AI Solutions, Cloud Platforms and IT Services.",
-  keywords: ["AI Development", "Software Company", "Cloud Solutions", "IT Services", "Cosmolix"],
+  description:
+    "Custom Software Development, AI Solutions, Cloud Platforms and IT Services.",
+  keywords: [
+    "AI Development",
+    "Software Company",
+    "Cloud Solutions",
+    "IT Services",
+    "Cosmolix",
+  ],
   openGraph: {
     title: "Cosmolix Private Limited",
-    description: "Custom Software Development, AI Solutions, Cloud Platforms and IT Services.",
+    description:
+      "Custom Software Development, AI Solutions, Cloud Platforms and IT Services.",
     url: "https://cosmolix.com",
     siteName: "Cosmolix",
     locale: "en_US",
@@ -31,7 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cosmolix Private Limited",
-    description: "Custom Software Development, AI Solutions, Cloud Platforms and IT Services.",
+    description:
+      "Custom Software Development, AI Solutions, Cloud Platforms and IT Services.",
   },
   robots: {
     index: true,
@@ -60,12 +67,7 @@ export default function RootLayout({
       <body
         className={`font-sans bg-[#F5F1EA] text-neutral-900 h-full flex flex-col`}
       >
-        <ScrollProgress />
-        <Navbar />
-        <main className="flex-grow w-full">
-          {children}
-        </main>
-        <Footer />
+        <SiteShell>{children}</SiteShell>
         <Analytics />
       </body>
     </html>
