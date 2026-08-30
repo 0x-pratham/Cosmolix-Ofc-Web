@@ -88,7 +88,7 @@ export default function MaintenancePage() {
           {/* Cosmolix Global Logo */}
           <div className="flex h-16 items-center sm:h-20">
             <img
-              src="https://cosmolix.co.in/logo/cosmolix-logo.png"
+              src="https://i.ibb.co/ynnNmnSG/cosmolix.jpg"
               alt="Cosmolix"
               className="h-14 w-auto object-contain sm:h-16"
             />
