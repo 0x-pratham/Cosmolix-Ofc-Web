@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const MAINTENANCE_UNTIL =
   process.env.NEXT_PUBLIC_MAINTENANCE_UNTIL ||
-  "2026-09-06T18:29:59.000Z";
+  "2026-09-13T15:48:00.000Z";
 
 type TimeLeft = {
   days: number;
